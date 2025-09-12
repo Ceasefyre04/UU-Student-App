@@ -1,0 +1,576 @@
+import kotlinx.html.*
+import kotlinx.html.stream.createHTML
+
+// Generates the HTML for the current page using kotlinx.html DSL
+fun homePageHtml(): String {
+    val docType = "<!DOCTYPE html>\n"
+    val html = createHTML(prettyPrint = true).html {
+        head {
+            title("Home")
+            meta { charset = "UTF-8" }
+            meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
+            link(rel = "stylesheet", href = "./style.css")
+
+            // Preconnects
+            link(rel = "preconnect", href = "https://fonts.googleapis.com")
+            link(rel = "preconnect", href = "https://fonts.gstatic.com") { attributes["crossorigin"] = "" }
+
+            // Fonts (mirroring the original intent)
+            link(
+                rel = "stylesheet",
+                href = "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            )
+            link(
+                rel = "stylesheet",
+                href = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            )
+            link(
+                rel = "stylesheet",
+                href = "https://fonts.googleapis.com/css2?family=SF+Pro+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            )
+        }
+        body {
+            div(classes = "parent-div") {
+                div(classes = "home-965210 pos-abs") {
+                    img(
+                        classes = "pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-965210",
+                        src = "https://s3-alpha-sig-oac.figma.com/img/84f9/0e06/4398ceed52b4aa036c6828e8dd8eab3b?Expires=1758499200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LULbub04htNiw-TVlLAE3U1pFwP~fhJtwGg2jJB2HZ2CtoSHNm4JyDzk~jIQq7~mDMXVfe2GZiTDmgJsk1bbhwHOfagE9nTmXV5Q4BO6bTUgO23qq0Rla6Z3uhjG-wn0AQaH7KOyx5qDRmiTIZ5Wo9KERS2fqLDBcxFWNZnRz6t0BLjJMcKMstzSk5jmeRPtb1CTJgl6ThYzC3qiPPgWPQBaXcYgTE6Ky87AWE3zP~jcgRi83yjvfAvCD1-18mVr2GDH--TcgkonO~BohbwDOsyKK1CUzRoOsMfa8KrtR6SYB6Y2-uOmzx3k113CUzUZNBLkepcy9q49Fh-uJamBg__",
+                        alt = "965210-ALT"
+                    )
+
+                    div(classes = "header-965210-container pos-abs") {
+                        div(classes = "header-41696 pos-abs") {
+                            div(classes = "general--settin-41288-container pos-abs") {
+                                div(classes = "general--settin-25271 pos-abs") {
+                                    section(classes = "icon-frame-25272 pos-abs") {
+                                        div(classes = "base-25273 pos-abs") {
+                                            div(classes = "nodeBg-25273 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                        }
+                                        div(classes = "vector-25275 pos-abs") {
+                                            div(classes = "nodeBg-25275 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                        }
+                                        div(classes = "ellipse-41-25274 pos-abs") {}
+                                    }
+                                }
+                            }
+
+                            div(classes = "uu-logo-1-219 pos-abs") {
+                                img(
+                                    classes = "pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-219",
+                                    src = "https://s3-alpha-sig-oac.figma.com/img/9847/9877/d49c2fdb9f677addd4d26d4b0fadf43d?Expires=175899200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MXOeNllVux~peF01e4bV--~2jn8QgHIcj8RxBeYbufvaaxpZCCsKKnlIIEZGbEXLZWzGfeEHin~svqvmlF2Ybf-12OOFEZFd-yUkKTd9inBfNwJBp-MtaUNfh37-5UquKTu9~l635vj4fMSel8dCufqMIJXP6UubhKZuNgGMK16aNd-HlsdAS9PdkeDd9AOMPi4PYjCwWRyo6~n99W4dS~bknSN3Afk2Jwoj0jEBwOdpFsW27ZGIDNBMDs4YwC-gjHCUoGKvF3n-Yk63fzJqUAWqwLEKBULLDcnSOKCGDPYEB9QYjFNy~5NrlIUxyxJejO2hroYDNnHiL9lKzc3zQ__",
+                                    alt = "219-ALT"
+                                )
+                            }
+
+                            div(classes = "rectangle-3-2110 pos-abs") {}
+
+                            div(classes = "search-41625-container pos-abs") {
+                                div(classes = "stateactive-top-41597 pos-abs") {
+                                    section(classes = "content-41598 pos-abs") {
+                                        div(classes = "arrowbackward-41599 pos-abs") {
+                                            div(classes = "arrowbackward-I41599_2219 pos-abs") {
+                                                span(classes = "arrowbackward-I41599_2219-0") { +"←" }
+                                            }
+                                        }
+                                        div(classes = "placeholder-lab-41600 pos-abs") {
+                                            span(classes = "placeholder-lab-41600-0") { br {} }
+                                            span(classes = "placeholder-lab-41600-1") { +"Search" }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div(classes = "rectangle-1-965211 pos-abs") {}
+
+                    div(classes = "calendar--calen-965233-container pos-abs") {
+                        div(classes = "calendar--calen-412389 pos-abs") {
+                            div(classes = "vector-412390 pos-abs") {
+                                div(classes = "nodeBg-412390 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "navigation--map-965223-container pos-abs") {
+                        div(classes = "navigation--map-412395 pos-abs") {
+                            div(classes = "vector-412396 pos-abs") {
+                                div(classes = "nodeBg-412402 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "calendar-965232 pos-abs") {
+                        span(classes = "calendar-965232-0") { +"Calendars" }
+                    }
+
+                    div(classes = "map-965222 pos-abs") {
+                        span(classes = "map-965222-0") { +"Maps" }
+                    }
+
+                    div(classes = "environment--su-965219-container pos-abs") {
+                        div(classes = "environment--su-412404 pos-abs") {
+                            div(classes = "vector-412405 pos-abs") {
+                                div(classes = "nodeBg-412405 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "weather-965218 pos-abs") {
+                        span(classes = "weather-965218-0") { +"Weather" }
+                    }
+
+                    div(classes = "buildings-965234 pos-abs") {
+                        span(classes = "buildings-965234-0") { +"Buildings" }
+                    }
+
+                    div(classes = "news-965220 pos-abs") {
+                        span(classes = "news-965220-0") { +"News" }
+                    }
+
+                    div(classes = "system--printer-965231-container pos-abs") {
+                        div(classes = "system--printer-412386 pos-abs") {
+                            div(classes = "vector-412387 pos-abs") {
+                                div(classes = "nodeBg-412387 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "user--usercardi-965225-container pos-abs") {
+                        div(classes = "user--usercardi-412362 pos-abs") {
+                            div(classes = "vector-412363 pos-abs") {
+                                div(classes = "nodeBg-412363 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "communication---965237-container pos-abs") {
+                        div(classes = "communication---412398 pos-abs") {
+                            div(classes = "vector-412399 pos-abs") {
+                                div(classes = "nodeBg-412399 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "paw-print-965230 pos-abs") {
+                        span(classes = "paw-print-965230-0") { +"Paw Print" }
+                    }
+
+                    div(classes = "id-card-965224 pos-abs") {
+                        span(classes = "id-card-965224-0") { +"ID Card" }
+                    }
+
+                    div(classes = "interface--book-965217-container pos-abs") {
+                        div(classes = "interface--book-412407 pos-abs") {
+                            div(classes = "vector-412408 pos-abs") {
+                                div(classes = "nodeBg-412408 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "general--news-965229-container pos-abs") {
+                        div(classes = "general-news-412369 pos-abs") {
+                            section(classes = "icon-frame-412370 pos-abs") {
+                                div(classes = "base-412371 pos-abs") {
+                                    div(classes = "nodeBg-412371 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-50-412372 pos-abs") {
+                                    div(classes = "nodeBg-412372 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-51-412373 pos-abs") {
+                                    div(classes = "nodeBg-412373 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-57-412374 pos-abs") {
+                                    div(classes = "nodeBg-412374 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-60-412375 pos-abs") {
+                                    div(classes = "nodeBg-412375 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                            }
+                        }
+                    }
+
+                    div(classes = "user--user03-965216-container pos-abs") {
+                        div(classes = "user--user03-412413 pos-abs") {
+                            div(classes = "vector-412414 pos-abs") {
+                                div(classes = "nodeBg-412414 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    div(classes = "self-service-965228 pos-abs") {
+                        span(classes = "self-service-965228-0") { +"Self Service" }
+                    }
+
+                    div(classes = "my-account-965215 pos-abs") {
+                        span(classes = "my-account-965215-0") { +"My Account" }
+                    }
+
+                    div(classes = "services-965236 pos-abs") {
+                        span(classes = "services-965236-0") { +"Services" }
+                    }
+
+                    div(classes = "warning--shield-965227-container pos-abs") {
+                        div(classes = "warning--shield-412365 pos-abs") {
+                            div(classes = "vector-412366 pos-abs") {
+                                div(classes = "nodeBg-412366 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+
+                    section(classes = "cutlery-4-965238 pos-abs") {
+                        div(classes = "cutlery-4-965239 pos-abs") {
+                            div(classes = "group-965240 pos-abs") {
+                                div(classes = "vector-965241 pos-abs") {
+                                    div(classes = "nodeBg-965241 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-965242 pos-abs") {
+                                    div(classes = "nodeBg-965242 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                            }
+                            div(classes = "group-965243 pos-abs") {
+                                div(classes = "vector-965246 pos-abs") {
+                                    div(classes = "nodeBg-965246 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-965247 pos-abs") {
+                                    div(classes = "nodeBg-965247 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-965248 pos-abs") {
+                                    div(classes = "nodeBg-965248 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-965245 pos-abs") {
+                                    div(classes = "nodeBg-965245 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                                div(classes = "vector-965244 pos-abs") {
+                                    div(classes = "nodeBg-965244 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                }
+                            }
+                        }
+                    }
+
+                    div(classes = "safety-and-secu-965226 pos-abs") {
+                        span(classes = "safety-and-secu-965226-0") { +"Safety and Security" }
+                    }
+
+                    div(classes = "dining-options-965213 pos-abs") {
+                        span(classes = "dining-options-965213-0") { +"Dining Options" }
+                    }
+
+                    div(classes = "nav-bar-965212-container pos-abs") {
+                        div(classes = "nav-bar-2515 pos-abs") {
+                            div(classes = "ellipse-5-253 pos-abs") {}
+                            div(classes = "ellipse-7-2513 pos-abs") {}
+                            div(classes = "ellipse-6-2512 pos-abs") {}
+                            div(classes = "ellipse-4-252 pos-abs") {}
+                            div(classes = "rectangle-5-2115 pos-abs") {}
+                            div(classes = "rectangle-6-2116 pos-abs") {}
+                            div(classes = "polygon-1-2130 pos-abs") {}
+                            div(classes = "nodeBg-2130 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            div(classes = "rectangle-10-2131 pos-abs") {}
+                            div(classes = "polygon-3-2333 pos-abs") {
+                                div(classes = "nodeBg-2333 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "polygon-2-2332 pos-abs") {
+                                div(classes = "nodeBg-2332 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "ellipse-1-2121 pos-abs") {}
+                            div(classes = "rectangle-4-2114 pos-abs") {}
+                            div(classes = "ellipse-2-2122 pos-abs") {}
+                            div(classes = "rectangle-7-2118 pos-abs") {}
+                            div(classes = "rectangle-8-2128 pos-abs") {}
+                            div(classes = "line-2-2336 pos-abs") {
+                                div(classes = "nodeBg-2336 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "rectangle-9-2129 pos-abs") {}
+                            div(classes = "ellipse-3-2339 pos-abs") {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return docType + html
+}
+
+// Optional: render directly to an Appendable (e.g., HttpServletResponse) if needed
+fun HTML.homePage() {
+    head {
+        title("Home")
+        meta { charset = "UTF-8" }
+        meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
+        link(rel = "stylesheet", href = "./style.css")
+        link(rel = "preconnect", href = "https://fonts.googleapis.com")
+        link(rel = "preconnect", href = "https://fonts.gstatic.com") { attributes["crossorigin"] = "" }
+        link(
+            rel = "stylesheet",
+            href = "https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        )
+        link(
+            rel = "stylesheet",
+            href = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        )
+        link(
+            rel = "stylesheet",
+            href = "https://fonts.googleapis.com/css2?family=SF+Pro+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        )
+    }
+    body {
+        div(classes = "parent-div") {
+            div(classes = "home-965210 pos-abs") {
+                img(
+                    classes = "pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-965210",
+                    src = "https://s3-alpha-sig-oac.figma.com/img/84f9/0e06/4398ceed52b4aa036c6828e8dd8eab3b?Expires=1758499200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LULbub04htNiw-TVlLAE3U1pFwP~fhJtwGg2jJB2HZ2CtoSHNm4JyDzk~jIQq7~mDMXVfe2GZiTDmgJsk1bbhwHOfagE9nTmXV5Q4BO6bTUgO23qq0Rla6Z3uhjG-wn0AQaH7KOyx5qDRmiTIZ5Wo9KERS2fqLDBcxFWNZnRz6t0BLjJMcKMstzSk5jmeRPtb1CTJgl6ThYzC3qiPPgWPQBaXcYgTE6Ky87AWE3zP~jcgRi83yjvfAvCD1-18mVr2GDH--TcgkonO~BohbwDOsyKK1CUzRoOsMfa8KrtR6SYB6Y2-uOmzx3k113CUzUZNBLkepcy9q49Fh-uJamBg__",
+                    alt = "965210-ALT"
+                )
+
+                div(classes = "header-965210-container pos-abs") {
+                    div(classes = "header-41696 pos-abs") {
+                        div(classes = "general--settin-41288-container pos-abs") {
+                            div(classes = "general--settin-25271 pos-abs") {
+                                section(classes = "icon-frame-25272 pos-abs") {
+                                    div(classes = "base-25273 pos-abs") {
+                                        div(classes = "nodeBg-25273 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                    }
+                                    div(classes = "vector-25275 pos-abs") {
+                                        div(classes = "nodeBg-25275 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                                    }
+                                    div(classes = "ellipse-41-25274 pos-abs") {}
+                                }
+                            }
+                        }
+
+                        div(classes = "uu-logo-1-219 pos-abs") {
+                            img(
+                                classes = "pos-abs image-div bg-no-repeat fill-parent bg-cover nodeBg-219",
+                                src = "https://s3-alpha-sig-oac.figma.com/img/9847/9877/d49c2fdb9f677addd4d26d4b0fadf43d?Expires=175899200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MXOeNllVux~peF01e4bV--~2jn8QgHIcj8RxBeYbufvaaxpZCCsKKnlIIEZGbEXLZWzGfeEHin~svqvmlF2Ybf-12OOFEZFd-yUkKTd9inBfNwJBp-MtaUNfh37-5UquKTu9~l635vj4fMSel8dCufqMIJXP6UubhKZuNgGMK16aNd-HlsdAS9PdkeDd9AOMPi4PYjCwWRyo6~n99W4dS~bknSN3Afk2Jwoj0jEBwOdpFsW27ZGIDNBMDs4YwC-gjHCUoGKvF3n-Yk63fzJqUAWqwLEKBULLDcnSOKCGDPYEB9QYjFNy~5NrlIUxyxJejO2hroYDNnHiL9lKzc3zQ__",
+                                alt = "219-ALT"
+                            )
+                        }
+
+                        div(classes = "rectangle-3-2110 pos-abs") {}
+
+                        div(classes = "search-41625-container pos-abs") {
+                            div(classes = "stateactive-top-41597 pos-abs") {
+                                section(classes = "content-41598 pos-abs") {
+                                    div(classes = "arrowbackward-41599 pos-abs") {
+                                        div(classes = "arrowbackward-I41599_2219 pos-abs") {
+                                            span(classes = "arrowbackward-I41599_2219-0") { +"←" }
+                                        }
+                                    }
+                                    div(classes = "placeholder-lab-41600 pos-abs") {
+                                        span(classes = "placeholder-lab-41600-0") { br {} }
+                                        span(classes = "placeholder-lab-41600-1") { +"Search" }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div(classes = "rectangle-1-965211 pos-abs") {}
+
+                div(classes = "calendar--calen-965233-container pos-abs") {
+                    div(classes = "calendar--calen-412389 pos-abs") {
+                        div(classes = "vector-412390 pos-abs") {
+                            div(classes = "nodeBg-412390 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "navigation--map-965223-container pos-abs") {
+                    div(classes = "navigation--map-412395 pos-abs") {
+                        div(classes = "vector-412396 pos-abs") {
+                            div(classes = "nodeBg-412402 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "calendar-965232 pos-abs") {
+                    span(classes = "calendar-965232-0") { +"Calendars" }
+                }
+
+                div(classes = "map-965222 pos-abs") {
+                    span(classes = "map-965222-0") { +"Maps" }
+                }
+
+                div(classes = "environment--su-965219-container pos-abs") {
+                    div(classes = "environment--su-412404 pos-abs") {
+                        div(classes = "vector-412405 pos-abs") {
+                            div(classes = "nodeBg-412405 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "weather-965218 pos-abs") {
+                    span(classes = "weather-965218-0") { +"Weather" }
+                }
+
+                div(classes = "buildings-965234 pos-abs") {
+                    span(classes = "buildings-965234-0") { +"Buildings" }
+                }
+
+                div(classes = "news-965220 pos-abs") {
+                    span(classes = "news-965220-0") { +"News" }
+                }
+
+                div(classes = "system--printer-965231-container pos-abs") {
+                    div(classes = "system--printer-412386 pos-abs") {
+                        div(classes = "vector-412387 pos-abs") {
+                            div(classes = "nodeBg-412387 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "user--usercardi-965225-container pos-abs") {
+                    div(classes = "user--usercardi-412362 pos-abs") {
+                        div(classes = "vector-412363 pos-abs") {
+                            div(classes = "nodeBg-412363 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "communication---965237-container pos-abs") {
+                    div(classes = "communication---412398 pos-abs") {
+                        div(classes = "vector-412399 pos-abs") {
+                            div(classes = "nodeBg-412399 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "paw-print-965230 pos-abs") {
+                    span(classes = "paw-print-965230-0") { +"Paw Print" }
+                }
+
+                div(classes = "id-card-965224 pos-abs") {
+                    span(classes = "id-card-965224-0") { +"ID Card" }
+                }
+
+                div(classes = "interface--book-965217-container pos-abs") {
+                    div(classes = "interface--book-412407 pos-abs") {
+                        div(classes = "vector-412408 pos-abs") {
+                            div(classes = "nodeBg-412408 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "general--news-965229-container pos-abs") {
+                    div(classes = "general-news-412369 pos-abs") {
+                        section(classes = "icon-frame-412370 pos-abs") {
+                            div(classes = "base-412371 pos-abs") {
+                                div(classes = "nodeBg-412371 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-50-412372 pos-abs") {
+                                div(classes = "nodeBg-412372 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-51-412373 pos-abs") {
+                                div(classes = "nodeBg-412373 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-57-412374 pos-abs") {
+                                div(classes = "nodeBg-412374 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-60-412375 pos-abs") {
+                                div(classes = "nodeBg-412375 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+                }
+
+                div(classes = "user--user03-965216-container pos-abs") {
+                    div(classes = "user--user03-412413 pos-abs") {
+                        div(classes = "vector-412414 pos-abs") {
+                            div(classes = "nodeBg-412414 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                div(classes = "self-service-965228 pos-abs") {
+                    span(classes = "self-service-965228-0") { +"Self Service" }
+                }
+
+                div(classes = "my-account-965215 pos-abs") {
+                    span(classes = "my-account-965215-0") { +"My Account" }
+                }
+
+                div(classes = "services-965236 pos-abs") {
+                    span(classes = "services-965236-0") { +"Services" }
+                }
+
+                div(classes = "warning--shield-965227-container pos-abs") {
+                    div(classes = "warning--shield-412365 pos-abs") {
+                        div(classes = "vector-412366 pos-abs") {
+                            div(classes = "nodeBg-412366 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                    }
+                }
+
+                section(classes = "cutlery-4-965238 pos-abs") {
+                    div(classes = "cutlery-4-965239 pos-abs") {
+                        div(classes = "group-965240 pos-abs") {
+                            div(classes = "vector-965241 pos-abs") {
+                                div(classes = "nodeBg-965241 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-965242 pos-abs") {
+                                div(classes = "nodeBg-965242 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                        div(classes = "group-965243 pos-abs") {
+                            div(classes = "vector-965246 pos-abs") {
+                                div(classes = "nodeBg-965246 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-965247 pos-abs") {
+                                div(classes = "nodeBg-965247 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-965248 pos-abs") {
+                                div(classes = "nodeBg-965248 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-965245 pos-abs") {
+                                div(classes = "nodeBg-965245 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                            div(classes = "vector-965244 pos-abs") {
+                                div(classes = "nodeBg-965244 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                            }
+                        }
+                    }
+                }
+
+                div(classes = "safety-and-secu-965226 pos-abs") {
+                    span(classes = "safety-and-secu-965226-0") { +"Safety and Security" }
+                }
+
+                div(classes = "dining-options-965213 pos-abs") {
+                    span(classes = "dining-options-965213-0") { +"Dining Options" }
+                }
+
+                div(classes = "nav-bar-965212-container pos-abs") {
+                    div(classes = "nav-bar-2515 pos-abs") {
+                        div(classes = "ellipse-5-253 pos-abs") {}
+                        div(classes = "ellipse-7-2513 pos-abs") {}
+                        div(classes = "ellipse-6-2512 pos-abs") {}
+                        div(classes = "ellipse-4-252 pos-abs") {}
+                        div(classes = "rectangle-5-2115 pos-abs") {}
+                        div(classes = "rectangle-6-2116 pos-abs") {}
+                        div(classes = "polygon-1-2130 pos-abs") {}
+                        div(classes = "nodeBg-2130 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        div(classes = "rectangle-10-2131 pos-abs") {}
+                        div(classes = "polygon-3-2333 pos-abs") {
+                            div(classes = "nodeBg-2333 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                        div(classes = "polygon-2-2332 pos-abs") {
+                            div(classes = "nodeBg-2332 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                        div(classes = "ellipse-1-2121 pos-abs") {}
+                        div(classes = "rectangle-4-2114 pos-abs") {}
+                        div(classes = "ellipse-2-2122 pos-abs") {}
+                        div(classes = "rectangle-7-2118 pos-abs") {}
+                        div(classes = "rectangle-8-2128 pos-abs") {}
+                        div(classes = "line-2-2336 pos-abs") {
+                            div(classes = "nodeBg-2336 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat") {}
+                        }
+                        div(classes = "rectangle-9-2129 pos-abs") {}
+                        div(classes = "ellipse-3-2339 pos-abs") {}
+                    }
+                }
+            }
+        }
+    }
+}
